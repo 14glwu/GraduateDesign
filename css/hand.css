@@ -1,0 +1,77 @@
+@charset "utf-8";
+
+#content .showTable{
+	width: 1000px;
+	height: 750px;
+	top:50%;
+	left: 50%;
+	margin: -190px 0 0 -500px;
+	background:#fff;
+	position: absolute;
+	border: none;
+	box-shadow: 10px 10px 10px rgba(0,0,0,0.3); 
+	border-collapse: collapse;
+}
+#content .link{
+	width: 210px;
+	height: 210px;
+	display: inline-block;
+}
+#content td{
+	width: 210px;
+	height: 210px;
+	padding: 20px;
+	box-sizing: -webkit-border-box;
+}
+
+#content td>.title{
+	font-size: 18px;
+}
+
+
+
+/*单元格背景色*/
+.row1 td:nth-child(1){
+	background: #FFFFCC;
+}
+.row1 td:nth-child(2){
+	background: #CCFFFF;
+}
+.row1 td:nth-child(3){
+	background: #FFCCCC;
+}
+.row1 td:nth-child(4){
+	background: #99CC99;
+}
+.row2 td:nth-child(1){
+	background: #99CCCC;
+}
+.row2 td:nth-child(2){
+	background: url(../img/fly-kite.jpg) no-repeat center center/100%;
+}
+.row2 td:nth-child(2):hover{
+	background: url(../img/fly-kite.gif) no-repeat center center/100%;
+}
+.row2 td:nth-child(3){
+	background: #FFCC99;
+}
+.row2 td:nth-child(4){
+	background: #99CCFF;
+}
+.row3 td:nth-child(1){
+	background:#FFCC99;
+}
+.row3 td:nth-child(2){
+	background:#CCFF99;
+}
+.row3 td:nth-child(3){
+	background:#CCCCCC;
+}
+.row3 td:nth-child(4){
+	background:#FFCCCC;
+}
+
+
+.row1 td:nth-child(4):hover{
+	opacity: 1.0
+}

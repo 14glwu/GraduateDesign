@@ -1,0 +1,109 @@
+@charset "utf-8";
+
+@font-face {  
+ font-family: MyEnFont;  
+ src: url("font-en.ttf"); /* TTF file for CSS3 browsers */  
+}  
+@font-face {  
+ font-family: MyZhCnFont;  
+ src: url("font-zh-cn.TTF") ;/* TTF file for CSS3 browsers */  
+}  
+
+
+body,h1,h2,ul,table,tr,td{
+	margin: 0;
+	padding: 0;
+	font-family: MyZhCnFont,MyEnFont;
+}
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+/*用于去掉圆角*/
+.noradius{-moz-border-radius: 0;-webkit-border-radius: 0;border-radius: 0;}
+
+#nav {
+	width: 30px;
+	height: 30px;
+	padding: 5px 20px;
+	position: fixed;
+	left: 16%;
+	border-radius: 0 0 5px 5px;
+	background-color:#fff;
+	box-shadow: 5px 5px 10px rgba(0,0,0,0.3); 
+	cursor: pointer;
+	z-index: 9999;
+}
+/*网站logo*/
+#nav .logo{
+	width: 110px;
+	height: 30px;
+	left:-40px;
+	position: relative;
+	background: url(../img/logo.gif) no-repeat center center/40%;
+	text-indent: -9999px;
+}
+#nav .content{
+	margin: 0 10px;
+	width: 220px;
+	height: 200px;
+	display: none;
+}
+#nav h2{
+	font-size: 15px;
+	line-height: 24px;
+	font-weight: normal;
+	color: #666;
+}
+#nav ul{
+	margin: 0 20px;
+}
+#nav a{
+	color: #666;
+	font-size: 15px;
+	line-height: 24px;
+	display: block;
+}
+
+#nav a:hover{
+	background:#fcc;
+	border-radius: 3px;
+}
+/*搜索框*/
+#nav .search{
+	margin: 8px 0 0 0;
+	padding: 0 10px;
+	height: 24px;
+	width: 160px;
+	border-radius: 12px;
+	border:none;
+	color: #fff;
+	outline: none;
+	background:#f99;
+}
+#nav .searchButton{
+	width: 24px;
+	height: 24px;
+	top: 217px;
+	left: 170px;
+	position: absolute;
+	border: none;
+	outline: none;
+	top: 217px;
+	left: 170px;
+	border-radius: 12px;
+	cursor: pointer;
+	background:#f99 url('../img/search.png') no-repeat 0 0/100% ;
+}
+
+
+
+/*主体部分*/
+#content{
+	width: 100%;
+	height: 1011px;
+	background: url(../img/background.jpg) no-repeat scroll center center/100% border-box content-box;
+}
+
