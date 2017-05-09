@@ -1,30 +1,30 @@
 @charset "utf-8";
 
-#content .showTable{
+.showTable{
 	width: 1000px;
 	height: 750px;
 	top:50%;
 	left: 50%;
-	margin: -190px 0 0 -500px;
-	background:#fff;
+	margin: -375px 0 0 -500px;
+	background: #fff;
 	position: absolute;
 	border: none;
 	box-shadow: 10px 10px 10px rgba(0,0,0,0.3); 
 	border-collapse: collapse;
 }
-#content .link{
+.showTable .link{
 	width: 210px;
-	height: 210px;
+	height: 250px;
 	display: inline-block;
 }
-#content td{
+.showTable  td{
 	width: 210px;
-	height: 210px;
-	padding: 20px;
+	height: 250px;
+	padding: 0 20px;
 	box-sizing: -webkit-border-box;
 }
 
-#content td>.title{
+.showTable  td>.title{
 	font-size: 18px;
 }
 

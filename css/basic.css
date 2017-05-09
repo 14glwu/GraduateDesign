@@ -101,9 +101,11 @@ a{
 
 
 /*主体部分*/
-#content{
+#main{
 	width: 100%;
-	height: 1011px;
-	background: url(../img/background.jpg) no-repeat scroll center center/100% border-box content-box;
+	height: 1080px;
+	min-width: 1200px;
+	background: url(../img/background.jpg) repeat scroll left top/100%;
+	position: relative;
 }
 

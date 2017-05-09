@@ -1,12 +1,148 @@
 @charset "utf-8";
 
-#content .showGif{
-	width: 600px;
-	height: 600px;
-	top:50%;
-	left: 50%;
-	background:red;
-	position: absolute;
-	border: none;
-	box-shadow: 10px 10px 10px rgba(0,0,0,0.3); 
+#curtain{
+	width: 100%;
+	height: 1080px;
+	background: #e5e5e5;
+	opacity: 0.5;
 }
+#showContent{
+	width: 79%;
+	min-width: 1000px;
+	height: 950px;
+	top: 50%;
+	left: 50%;
+	/*background: red;*/
+	margin: -432px 0 0 -39.5%;
+	position: absolute;
+	box-sizing: border-box;
+}
+/*左部分盒子*/
+#left{
+	width: 22.5%;
+	height:950px;
+	background: #fff;
+	box-sizing: border-box;
+	float: left;
+}
+/*左部分内容*/
+#left .leftContent{
+	width: 80%;
+	height:890px;
+	margin: 30px auto;
+	border: 1px solid #999;
+	box-sizing: border-box;
+}
+/*向上箭头*/
+#left .topArrow{
+	width: 91%;
+	height:54px;
+	background: #fff url(../img/topArrow.png) no-repeat center center/25%;
+	margin: 0px auto;
+	cursor: pointer;
+}
+/*向下箭头*/
+#left .bottomArrow{
+	width: 91%;
+	height:54px;
+	cursor: pointer;
+	background:#fff url(../img/bottomArrow.png) no-repeat center center/25%;
+	margin: 0px auto;
+}
+/*内容盒子*/
+#left .box{
+	width: 91%;
+	height:246px;
+	margin: 10px auto;
+	cursor: pointer;
+}
+#left .box1{
+	background: #fff url(../img/fly-kite.jpg) no-repeat center center/100%;
+}
+#left .box2{
+	background: #fff url(../img/fly-kite.jpg) no-repeat center center/100%;
+}
+#left .box3{
+	background: #fff url(../img/fly-kite.jpg) no-repeat center center/100%;
+}
+
+
+/*右部分盒子*/
+#right{
+	width: 75%;
+	height:830px;
+	margin-top: 120px;
+	background: #fff;
+	float: right;
+	position: relative;
+}
+#right .rightContent{
+	width: 94%;
+	height: 770px;
+	background: #fff;
+	margin: 30px auto;
+}
+
+/*右盒子中的左部分*/
+#right .left{
+	width: 65%;
+	height: 770px;
+	background: #fff;
+	float: left;
+}
+#right .gif{
+	width: 100%;
+	height: 660px;
+	background: #fff url(../img/fly-kite.gif) no-repeat center center/80%;
+	border: 1px solid #999;
+	box-sizing: border-box;
+}
+#right .comment{
+	width: 100%;
+	height: 80px;
+	margin: 30px 0 0 0;
+	font-size: 20px;
+	padding: 10px;
+	background: #fff;
+	color: #333;
+	border: 1px solid #999;
+	box-sizing: border-box;
+}
+
+
+/*右盒子中的右部分*/
+#right .right{
+	width: 26%;
+	height: 770px;
+	background: #fff;
+	float: right;
+}
+#right .text{
+	width: 100%;
+	height: 460px;
+	background: #fff;
+	font-size: 20px;
+	color: #333;
+	padding: 20px;
+	border: 1px solid #999;
+	box-sizing: border-box;
+}
+#right .nextGif{
+	width: 100%;
+	height: 270px;
+	margin: 40px 0 0 0;
+	background: #fff url(../img/fly-kite.jpg) no-repeat center center/89%;
+	border: 1px solid #999;
+	box-sizing: border-box;
+}
+#right .rightArrow{
+	width: 8%;
+	height: 10%;
+	position: absolute;
+	top:73%;
+	left: 64.5%;
+	cursor: pointer;
+	background:#fff url(../img/rightArrow.png) no-repeat center center/36%;
+}
+
+

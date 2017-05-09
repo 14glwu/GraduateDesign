@@ -23,7 +23,7 @@
 			<button class="searchButton"></button>
 		</div>
 	</div>
-	<div id="content">
+	<div id="main">
 
 	</div>
 
@@ -36,12 +36,14 @@
 						$("#nav").animate({width:'220px',height:'250px',left:'12.5%'});
 						$("#nav .content" ).fadeIn("1000");
 						$("#nav .logo").animate({width:'220px',height:'60px',left:'0'});
+						$("#nav").css('border-radius','18px');
 					},
   					function(){
   						$("#nav").animate({width:'30px',height:'30px',left:'16%'});
+  						$("#nav").css('border-radius','0 0 5px 5px');
   						$("#nav .logo").animate({width:'110px',height:'30px',left:'-40px'});
   						$(".content" ).fadeOut("1000");
-  				});
+  					});
   		});
 	</script>
 </body>

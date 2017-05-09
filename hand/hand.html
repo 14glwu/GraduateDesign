@@ -24,7 +24,7 @@
 			<button class="searchButton"></button>
 		</div>
 	</div>
-	<div id="content">
+	<div id="main">
 		<table class="showTable">
 			<tr class="row1">
 				<td></td>
@@ -63,15 +63,17 @@
   						$(".content" ).fadeOut("1000");
   					});
 
-				$('#content td').hover(
+				$('.showTable td').hover(
 					function(){
-						$('#content td').css('opacity','0.5');
-						$('#content td:hover').css('opacity','1');
-						$('#content td:hover').css('box-shadow','10px 10px 10px rgba(0,0,0,0.3)');
+						$('.showTable td').css('opacity','0.5');
+						$('.showTable  td:hover').css({
+							'opacity':'1',
+							'box-shadow':'10px 10px 10px rgba(0,0,0,0.3)'});
 					},
 					function(){
-						$('#content td').css('opacity','1');
-						$('#content td').css('box-shadow','0 0 0 rgba(0,0,0,0.3)');
+						$('.showTable  td').css({
+							'opacity':'1',
+							'box-shadow':'0 0 0 rgba(0,0,0,0.3)'});
 					});
   				});
 	</script>
