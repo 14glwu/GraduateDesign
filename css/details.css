@@ -1,10 +1,11 @@
 @charset "utf-8";
 
+
 #curtain{
 	width: 100%;
 	height: 1080px;
 	background: #e5e5e5;
-	opacity: 0.5;
+	opacity: 0.9;
 }
 #showContent{
 	width: 79%;
@@ -40,6 +41,7 @@
 	background: #fff url(../img/topArrow.png) no-repeat center center/25%;
 	margin: 0px auto;
 	cursor: pointer;
+	display: block;
 }
 /*向下箭头*/
 #left .bottomArrow{
@@ -48,23 +50,32 @@
 	cursor: pointer;
 	background:#fff url(../img/bottomArrow.png) no-repeat center center/25%;
 	margin: 0px auto;
+	display: block;
 }
-/*内容盒子*/
-#left .box{
+/*轮播盒子*/
+#left .imgBox{
 	width: 91%;
-	height:246px;
-	margin: 10px auto;
+	height:760px;
+	display: block;
+	margin:5px auto;
+	overflow: hidden;
+	position: relative;
+}
+
+#left .img{
+	width: 100%;
+	height:245px;
 	cursor: pointer;
+	padding: 5px 0;
+	display: block;
 }
-#left .box1{
-	background: #fff url(../img/fly-kite.jpg) no-repeat center center/100%;
+
+#left img{
+	width: 100%;
+	height:245px;
 }
-#left .box2{
-	background: #fff url(../img/fly-kite.jpg) no-repeat center center/100%;
-}
-#left .box3{
-	background: #fff url(../img/fly-kite.jpg) no-repeat center center/100%;
-}
+
+
 
 
 /*右部分盒子*/
@@ -93,9 +104,11 @@
 #right .gif{
 	width: 100%;
 	height: 660px;
-	background: #fff url(../img/fly-kite.gif) no-repeat center center/80%;
+	background: #fff;
+	padding: 50px;
 	border: 1px solid #999;
 	box-sizing: border-box;
+	display:block;
 }
 #right .comment{
 	width: 100%;
@@ -107,6 +120,7 @@
 	color: #333;
 	border: 1px solid #999;
 	box-sizing: border-box;
+	resize: none;
 }
 
 
@@ -121,19 +135,23 @@
 	width: 100%;
 	height: 460px;
 	background: #fff;
-	font-size: 20px;
-	color: #333;
-	padding: 20px;
+	font-size: 14px;
+	resize: none;
+	color: #666;
+	line-height: 28px;
 	border: 1px solid #999;
 	box-sizing: border-box;
+	text-indent: 40%;
 }
 #right .nextGif{
 	width: 100%;
-	height: 270px;
-	margin: 40px 0 0 0;
-	background: #fff url(../img/fly-kite.jpg) no-repeat center center/89%;
+	margin: 30px 0 0 0;
+	padding: 10px;
+	background: #fff;
 	border: 1px solid #999;
 	box-sizing: border-box;
+	cursor: pointer;
+	display: block;
 }
 #right .rightArrow{
 	width: 8%;

@@ -39,80 +39,82 @@
 
 /*单元格背景色*/
 .row1 td:nth-child(1){
-	background: url(../img/滚铁环.jpg) no-repeat center center/100%;
-}
-.row1 td:nth-child(2){
 	background: #fff;
 }
+.row1 td:nth-child(2){
+	background: url(../img/弹弓.jpg) no-repeat center center/100%;
+}
 .row1 td:nth-child(3){
-	background: url(../img/打水漂.jpg) no-repeat center center/100%;
+	background: url(../img/掷投.jpg) no-repeat center center/100%;
 }
 .row1 td:nth-child(4){
-	background: url(../img/扳手腕.jpg) no-repeat center center/100%;
+	background: #fff;
 }
 .row2 td:nth-child(1){
-	background: url(../img/手影.jpg) no-repeat center center/100%;
+	background: url(../img/丢飞碟.jpg) no-repeat center center/100%;
 }
 .row2 td:nth-child(2){
-	background: url(../img/踢毽子.jpg) no-repeat center center/100%;
+	background: #fff;
 }
 
 .row2 td:nth-child(3){
-	background: #fff;
+	background: url(../img/跳马背.jpg) no-repeat center center/100%;
 }
 .row2 td:nth-child(4){
-	background: url(../img/呼啦圈.jpg) no-repeat center center/100%;
+	background: url(../img/default.jpg) no-repeat center center/100%;
 }
 .row3 td:nth-child(1){
-	background:#fff;
+	background: #fff;
 }
 .row3 td:nth-child(2){
-	background: url(../img/放风筝.jpg) no-repeat center center/100%;
+	background: url(../img/定飞镖.jpg) no-repeat center center/100%;
 }
 .row3 td:nth-child(3){
-	background: url(../img/捡石子.jpg) no-repeat center center/100%;
-}
-.row3 td:nth-child(4){
 	background:#fff;
 }
+.row3 td:nth-child(4){
+	background: url(../img/套圈.jpg) no-repeat center center/100%;
+}
+
+
 
 /*单元格hover事件*/
 .row1 td:nth-child(1):hover{
-	background: url(../gif/滚铁环.gif) no-repeat center center/100%;
-}
-.row1 td:nth-child(2):hover{
 	background: #fff;
 }
+.row1 td:nth-child(2):hover{
+	background: url(../gif/弹弓.gif) no-repeat center center/100%;
+}
 .row1 td:nth-child(3):hover{
-	background: url(../gif/打水漂.gif) no-repeat center center/100%;
+	background: url(../gif/掷投.gif) no-repeat center center/100%;
 }
 .row1 td:nth-child(4):hover{
-	background: url(../gif/扳手腕.gif) no-repeat center center/100%;
+	background: #fff;
 }
 .row2 td:nth-child(1):hover{
-	background: url(../gif/手影.gif) no-repeat center center/100%;
+	background: url(../gif/丢飞碟.gif) no-repeat center center/100%;
 }
 .row2 td:nth-child(2):hover{
-	background: url(../gif/踢毽子.gif) no-repeat center center/100%;
+	background: #fff;
 }
 
 .row2 td:nth-child(3):hover{
-	background: #fff;
+	background: url(../gif/跳马背.gif) no-repeat center center/100%;
 }
 .row2 td:nth-child(4):hover{
-	background: url(../gif/呼啦圈.gif) no-repeat center center/100%;
+	background: url(../gif/default.gif) no-repeat center center/100%;
 }
 .row3 td:nth-child(1):hover{
-	background:#fff;
+	background: #fff;
 }
 .row3 td:nth-child(2):hover{
-	background: url(../gif/放风筝.gif) no-repeat center center/100%;
+	background: url(../gif/定飞镖.gif) no-repeat center center/100%;
 }
 .row3 td:nth-child(3):hover{
-	background: url(../gif/捡石子.gif) no-repeat center center/100%;
+	background:#fff;
 }
 .row3 td:nth-child(4):hover{
-	background:#fff;
+	background: url(../gif/套圈.gif) no-repeat center center/100%;
 }
 
 

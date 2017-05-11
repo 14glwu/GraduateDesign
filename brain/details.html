@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>毕业设计</title>
+	<link rel="stylesheet" href="../css/basic.css">
+	<link rel="stylesheet" href="../css/details.css">
+	<script src="../js/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+	<div id="nav">
+		<div class="logo">LOGO</div>
+		<div class="content">
+			<h2><a href="../index.html">目录</a></h2>
+			<ul>
+				<li><a href="../eye/eye.html">眼睛</a></li>
+				<li><a href="../mouse/mouse.html">嘴巴</a></li>
+				<li><a href="../hand/hand.html">手脚</a></li>
+				<li><a href="../brain.html">大脑</a></li>
+				<li><a href="../ear/ear.html">耳朵</a></li>
+			</ul>
+			<input type="text" class="search">
+			<button class="searchButton"></button>
+		</div>
+	</div>
+	<div id="main">
+		<div id="curtain"></div>
+		<div id="showContent">
+			<div id="left">
+				<div class="leftContent">
+					<a class="topArrow" id="topmove" href="###"></a>
+					<ul class="imgBox">
+						<li><a class="img" href="###"><img class="clickImg" value="1" src="../img/五子棋.jpg" alt=""></a></li>
+						<li><a class="img" href="###"><img class="clickImg" value="2" src="../img/剪刀石头布.jpg" alt=""></a></li>
+						<li><a class="img" href="###"><img class="clickImg" value="3" src="../img/挑棒.jpg" alt=""></a></li>
+						<li><a class="img" href="###"><img class="clickImg" value="4" src="../img/飞行棋.jpg" alt=""></a></li>
+						<li><a class="img" href="###"><img class="clickImg" value="5" src="../img/七巧板.jpg" alt=""></a></li>
+						<li><a class="img" href="###"><img class="clickImg" value="6" src="../img/拼图.jpg" alt=""></a></li>
+					</ul>
+					<a class="bottomArrow" id="bottommove" href="###"></a>
+				</div>
+
+			</div>
+			<div id="right">
+				<div class="rightContent">
+					<div class="left">
+						<img class="gif" value="5" src="../gif/七巧板.gif"></img>
+						<textarea name="comment" id="comment" class="comment" cols="30" rows="10" placeholder="请输入你的评论"></textarea>
+					</div>
+					<div class="rightArrow"></div>
+					<div class="right">
+						<textarea class="text" readonly disabled>七巧板
+七巧板是一种古老的中国传统智力游戏，顾名思义，是由七块板组成的。而这七块板可拼成许多图形(1600种以上)，例如：三角形、平行四边形、不规则多边形，玩家也可以把它拼成各种人物、形象、动物、桥、房、塔等等，也可以是一些中、英文字母。七巧板是古代中国劳动人民的发明，其历史至少可以追溯到公元前一世纪，到了明代基本定型。明、清两代在中国民间广泛流传，清陆以湉《冷庐杂识》卷一中写道：近又有七巧图，其式五，其数七，其变化之式多至千余。体物肖形，随手变幻，盖游戏之具，足以排闷破寂，故世俗皆喜为之。在18世纪，七巧板流传到了国外。李约瑟说它是东方最古老的消遣品之一。
+七巧板有利于培养提高儿童形状概念、视觉分辨、认智技巧、视觉记忆、手眼协调等，鼓励开放、扩散思考、创新创作。
+
+</textarea>
+						<img class="nextGif" value="6" src="../img/拼图.jpg"></img>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+			$(document).ready(function(){
+				// 导航栏
+				$("#nav").hover(
+					function(){
+						$("#nav").animate({width:'220px',height:'250px',left:'12.5%'});
+						$("#nav .content" ).fadeIn("1000");
+						$("#nav .logo").animate({width:'220px',height:'60px',left:'0'});
+						$("#nav").css('border-radius','18px');
+					},
+  					function(){
+  						$("#nav").animate({width:'30px',height:'30px',left:'16%'});
+  						$("#nav").css('border-radius','0 0 5px 5px');
+  						$("#nav .logo").animate({width:'110px',height:'30px',left:'-40px'});
+  						$(".content" ).fadeOut("1000");
+  					});
+  		});
+	</script>
+<script>
+		var imgGif=[//图片对应的gif
+				"../gif/五子棋.gif",
+				"../gif/剪刀石头布.gif",
+				"../gif/挑棒.gif" ,
+				"../gif/飞行棋.gif",
+				"../gif/七巧板.gif",
+				"../gif/拼图.gif" 
+					]
+		var imgText=[//图片对应的文本
+				"五子棋\n五子棋是世界智力运动会竞技项目之一，是一种两人对弈的纯策略型棋类游戏，是世界智力运动会竞技项目之一，通常双方分别使用黑白两色的棋子，下在棋盘直线与横线的交叉点上，先形成5子连线者获胜。\n棋具与围棋通用，起源于中国上古时代的传统黑白棋种之一。主要流行于华人和汉字文化圈的国家以及欧美一些地区，是世界上最古老的棋。\n容易上手，老少皆宜，而且趣味横生，引人入胜；不仅能增强思维能力，提高智力，而且富含哲理，有助于修身养性。已在各个游戏平台有应用。",
+
+				"剪刀石头布\n“石头、剪刀、布”是猜拳的一种，又称“猜丁壳”，起源于中国，然后传到日本、韩国等地，随着亚欧贸易的不断发展传到了欧洲，到了近现代逐渐发展到世界。游戏规则中，石头克剪刀，剪刀克布，布克石头。",
+
+				"剪刀石头布\n“石头、剪刀、布”是猜拳的一种，又称“猜丁壳”，起源于中国，然后传到日本、韩国等地，随着亚欧贸易的不断发展传到了欧洲，到了近现代逐渐发展到世界。游戏规则中，石头克剪刀，剪刀克布，布克石头。",
+
+				"挑棒\n游戏人数两人或两人以上，可以用石头剪子布决定谁先开始游戏。游戏开始时一人先把小棒握在手中，然后松手，等小棒落稳，用手一根一根的拿取小棒，也可以用拿取的小棒挑其它的小棒，但不能碰动其它的小棒，否则就要轮换下一位进行游戏。游戏轮流进行，最后看谁手上的小棒多，谁就获胜。可以说相当考验你的眼力和观察力。",
+
+				"七巧板\n七巧板是一种古老的中国传统智力游戏，顾名思义，是由七块板组成的。而这七块板可拼成许多图形(1600种以上)，例如：三角形、平行四边形、不规则多边形，玩家也可以把它拼成各种人物、形象、动物、桥、房、塔等等，也可以是一些中、英文字母。七巧板是古代中国劳动人民的发明，其历史至少可以追溯到公元前一世纪，到了明代基本定型。明、清两代在中国民间广泛流传，清陆以湉《冷庐杂识》卷一中写道：近又有七巧图，其式五，其数七，其变化之式多至千余。体物肖形，随手变幻，盖游戏之具，足以排闷破寂，故世俗皆喜为之。在18世纪，七巧板流传到了国外。李约瑟说它是东方最古老的消遣品之一。\n七巧板有利于培养提高儿童形状概念、视觉分辨、认智技巧、视觉记忆、手眼协调等，鼓励开放、扩散思考、创新创作。",
+				
+				"拼图\n拼图游戏是广受欢迎的一种智力游戏，它的变化多端，难度不一，让人百玩不厌。\n拼图玩具已经有约235年的历史了。早在1760年，法英两国几乎同时 出现这种既流行又有益的娱乐方式。把一张图片粘在硬纸板上，然后把它剪成不规则的小碎片。最初这些图片都是有教育意义的，要么附有适于年轻人阅读的短文，要么向新兴资产阶级传授历史或地理知识。随着发展，拼图逐渐多样化。\n玩法：事先准备好一张比拼图完成尺寸大的厚纸板，在拼图组合前，垫在底下，以方便在组合过程中的移动及收藏，并防止拼图散落及遗失。先找出一边及两边是直线的片数，将画面的四边组合起来，再逐步往图面中心进行，可减少拼图的时间。在组合时，如果拼图与拼图间无法紧紧的密合，或色调有差异时﹝尤其在处理同色系画面时，更需注意﹞，不要强行组合，需要再花点功夫找出正确的片数。"
+				];
+		var nextGifValue=5;//.nextGif图片在数组中的初始位置
+
+		var i=0;//第一个位置的项数
+		var n=6;//图片数
+
+		$(document).ready(function(){
+
+			//鼠标点击上箭头
+			$('#topmove').click(function(){
+				if(i<=n-4){
+					$('.imgBox .img').eq(i).css('display','none');
+					i++;
+				}
+			});
+
+			//鼠标点击下箭头
+			$('#bottommove').click(function(){
+				if(i>=n-4){
+					$('.imgBox .img').eq(i-1).css('display','block')
+					i--;
+				}
+			});
+
+			//鼠标点击左边图片
+			$(".clickImg").click(function(){
+                 $(".gif").attr('src',imgGif[$(this).attr("value")-1]);
+                 $(".nextGif").attr('src',$(this).parent().parent().next().find('img').attr("src"));
+                 if($(this).attr("value")!=n){nextGifValue=$(this).attr("value");}
+                 	else{nextGifValue=nextGifValue;}
+                 $(".text").text(imgText[$(this).attr("value")-1]);
+
+       		});
+       		//鼠标点击右边图片
+			$(".nextGif").click(function(){
+                 $(".gif").attr('src',imgGif[nextGifValue]);
+                 $(".text").text(imgText[nextGifValue]);
+       		});
+
+       		$(".rightArrow").click(function(){
+                 $(".gif").attr('src',imgGif[nextGifValue]);
+                 $(".text").text(imgText[nextGifValue]);
+       		});
+
+		});
+
+	</script>
+</body>
+</html>

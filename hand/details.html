@@ -4,9 +4,8 @@
 	<meta charset="UTF-8">
 	<title>毕业设计</title>
 	<link rel="stylesheet" href="../css/basic.css">
-	<link rel="stylesheet" href="../css/hand-details.css">
-	<script src="../js/jquery-3.2.1.min.js">
-</script>
+	<link rel="stylesheet" href="../css/details.css">
+	<script src="../js/jquery-3.2.1.min.js"></script>
 </head>
 <body>
 	<div id="nav">
@@ -14,11 +13,11 @@
 		<div class="content">
 			<h2><a href="../index.html">目录</a></h2>
 			<ul>
-				<li><a href="">眼睛</a></li>
-				<li><a href="">嘴巴</a></li>
-				<li><a href="hand.html">手脚</a></li>
-				<li><a href="">大脑</a></li>
-				<li><a href="">耳朵</a></li>
+				<li><a href="../eye/eye.html">眼睛</a></li>
+				<li><a href="mouse.html">嘴巴</a></li>
+				<li><a href="../hand/hand.html">手脚</a></li>
+				<li><a href="../brain/brain.html">大脑</a></li>
+				<li><a href="../ear/ear.html">耳朵</a></li>
 			</ul>
 			<input type="text" class="search">
 			<button class="searchButton"></button>
@@ -29,35 +28,41 @@
 		<div id="showContent">
 			<div id="left">
 				<div class="leftContent">
-					<div class="topArrow"></div>
-					<div class="box box1"></div>
-					<div class="box box2"></div>
-					<div class="box box3"></div>
-					<div class="bottomArrow"></div>
+					<a class="topArrow" id="topmove" href="###"></a>
+					<ul class="imgBox">
+						<li><a class="img" href="###"><img class="clickImg" value="1" src="../img/滚铁环.jpg" alt=""></a></li>
+						<li><a class="img" href="###"><img class="clickImg" value="2" src="../img/打水漂.jpg" alt=""></a></li>
+						<li><a class="img" href="###"><img class="clickImg" value="3" src="../img/扳手腕.jpg" alt=""></a></li>
+						<li><a class="img" href="###"><img class="clickImg" value="4" src="../img/手影.jpg" alt=""></a></li>
+						<li><a class="img" href="###"><img class="clickImg" value="5" src="../img/踢毽子.jpg" alt=""></a></li>
+						<li><a class="img" href="###"><img class="clickImg" value="6"  src="../img/放风筝.jpg" alt=""></a></li>
+						<li><a class="img" href="###"><img class="clickImg" value="7"  src="../img/捡石子.jpg" alt=""></a></li>
+					</ul>
+					<a class="bottomArrow" id="bottommove" href="###"></a>
 				</div>
+
 			</div>
 			<div id="right">
 				<div class="rightContent">
 					<div class="left">
-						<div class="gif"></div>
+						<img class="gif" value="6" src="../gif/放风筝.gif"></img>
 						<textarea name="comment" id="comment" class="comment" cols="30" rows="10" placeholder="请输入你的评论"></textarea>
 					</div>
 					<div class="rightArrow"></div>
 					<div class="right">
-						<div class="text">文字区域</div>
-						<div class="nextGif"></div>
+						<textarea class="text" readonly disabled>放风筝
+风筝又称纸鸢、风鸢、纸鹞、鹞子，是由古代劳动人民发明于中国东周春秋时期，至今已2000多年。南北朝时，风筝开始成为传递信息的工具；从隋唐开始，由于造纸业的发达，民间开始用纸来裱糊风筝；到了宋代，放风筝成为人们喜爱的户外活动。放风筝的时候，一般是一抽一放。抽的时候，因为风筝提线一般放在风筝面靠上的位置，加大牵引力可以控制风筝角度变小，上扬力增加，风筝稳步上升；放的时候，即平衡的风筝牵引力变小，在风力和扬力的合力作用下，风筝会飞高飞远，但是必须很快又抽，以再次保持风筝的角度稳定。风力正盛的时候可以多放线，当风力稍有下降，就收一些线。春天放风筝，对人的身体健康是非常有益处的。传统中医认为，放风筝者沐浴和煦的阳光和春风，有“疏泄内热，增强体质之益。此外，放风筝能使人情绪开朗、心境愉悦。放飞时，大脑高度集中，无疑会消除人的内心杂念；放飞者极目蓝天，其心胸也会感到开阔；此外，春季草长莺飞，触目皆景，放飞风筝，是一次人与自然的美好对话。
+
+</textarea>
+						<img class="nextGif" value="7" src="../img/捡石子.jpg"></img>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-
-	
-
-
-
 	<script>
 			$(document).ready(function(){
+				// 导航栏
 				$("#nav").hover(
 					function(){
 						$("#nav").animate({width:'220px',height:'250px',left:'12.5%'});
@@ -72,6 +77,72 @@
   						$(".content" ).fadeOut("1000");
   					});
   		});
+	</script>
+	<script>
+		var imgGif=[//图片对应的gif
+				"../gif/滚铁环.gif",
+				"../gif/打水漂.gif",
+				"../gif/扳手腕.gif",
+				"../gif/手影.gif",
+				"../gif/踢毽子.gif",
+				"../gif/放风筝.gif",
+				"../gif/捡石子.gif"
+				]
+		var imgText=[//图片对应的文本
+		"滚铁环\n旧时传统儿童游戏，在二十世纪六七十年代盛行于全中国。\n玩家手捏顶头是“U”字形的铁棍或铁丝，推一个直径50厘米左右的黑铁环向前跑。有的还在铁环上套两三个小环，滚动时更响亮。用铁丝做一个圈，然后再做一个长柄的铁钩子，推着这个铁丝圈滚着走。\n孩子们右手持着长柄，将其搭上铁环，手上的力量通过长柄的钩子传递到铁环上，促使铁环快速地滚动。孩子跟在铁环后头快速奔跑起来，只有这样，他才能跟上铁环。孩子加大手上的力量，那个钩子起到了轴承般的作用，从而推动着铁环。由于铁环的惯性，孩子手上的长柄也随着铁环的滚动而做着圆周运动， 滚铁环的关键之处在于掌握好平衡。\n滚铁环自娱性强，荷兰的运动专家在1976年指出滚铁环比赛有助于提高人体的平衡性、肢体的协调以及眼力，可以提高四肢活动能力，最重要的是它让孩子们享受运动的乐趣，有一个无忧的童年。廉价而又方便实用的铁环，不限场地，随处可玩，运动量大而又灵活多变，能让孩子在游戏中运动，在运动中成长，给他强健的体魄，灵巧的身躯，顽强的意志和过人的精力。",
+
+		"打水漂\n打水漂是人类最古老的游戏之一，据推测从石器时代就开始了。打水漂在新疆维吾尔自治区居住的维吾尔族、塔吉克族、塔塔尔族等少数民族在闲暇时，经常以几人为单位在河边进行打水漂的比赛。在古代中国南方多水域地区较为流行。\n打水漂时要找那样比较扁的，最好用瓦片，用拇指和中指捏住，食指在后，身体向后倾斜，手臂与身体大约呈45度，半蹲，瞄准后用臂膀力量发射出去，扔出去的时候用食指拔下，让其旋转着扔出，角度应为20度。石片擦水面飞行，石片碰水面后因惯力原理遇水面再弹起再飞，石片不断在水面上向前弹跳，直至惯力用尽后沉水，这游戏一般比漂飞出去的距离和点击水面的次数。",
+
+		"扳手腕\n一种比臂力和腕力的运动。20世纪50一60年代开始出现地区性和国际性比赛。\n1.参赛者统一采用右手（互握拇指，不戴任何防护物）进行比赛，双方右手肘着台面，并成一直线。比赛姿势采用站立式，左手可握住比赛台上的握把，躯干不能触及比赛台。2.比赛采用3局2胜制，每局比赛1分钟，每局中间休息1分钟。3.比赛的预备阶段，双方选手的肘部必须处于中间，肘部屈曲度由选手们自行确定。手与肩膀的距离不允许少于一个拳头的位置。开始口令一律为“预备、开始！”。4.比赛中，拳头端部离台面小于10厘米或触及对手决胜垫者输；任何时候，选手肘部都要和垫板接触，单脚离地、肘关节离台面或离开规定范围者输。5.在相持情况下，每局时间终止时，以扳向己方者胜。6.比赛时选手第一次犯规将受到黄牌警告，当盘犯规两次则当盘输。双方同时犯规，先犯规者输。7.发现下列为犯规动作：1）采用下蹲动作；2）将对方手腕往己方处下拉；3）双脚离开地面；4）抢令；5）肘离开肘垫；6）松手；7）手腕和自己的身体接触；8）危险姿势且不及时改正；9）不与裁判配合，延长摆正手位的时间。8.参赛选手不得蓄长手指甲。9.若选手的比赛姿势存在受伤危险时，裁判有权停止比赛。裁判的判决就是最终判决。10.比赛中，选手要谨守公平竞赛原则，禁止任何有违体育精神的行为。\n掰手腕除了需要手部腕部肌肉的力量以外，肱二头肌、前臂屈指肌、肱三头肌、肱桡肌也均会被带动。可能会造成手臂，肩部等处肌肉的扭伤，甚至有可能伤到骨骼。","手影\n杭州民间传统儿童游戏。手影游戏十分简便，且历史悠久。《都城纪胜》记杭州瓦舍众伎“杂手艺”中就有“手影戏”一项。手影戏不要复杂设备，只要一烛或一灯，甚至一轮明月，就可以展开巧思，通过手势的变化，创造出种种物的形象，因手影主要作给儿童看，儿童喜爱动物，于是兔子、狗、猫等等就成了手影主要表现对象。“像不像，三分样”。通过形似的手影游戏，可以启发儿童的联想思维。",
+
+		"踢毽子\n踢毽子是一种古老的传统民俗体育活动之一，起源于汉代，由古代蹴鞠发展而来。盛行于南北朝和隋唐，至今已有两千多年的历史了，作为简便易行的健身活动。\n毽子的基本踢法，主要有“盘、拐、绷、蹬”四种，用脚内侧踢为“盘”，用脚外侧踢为“拐”，用脚面踢为“绷”，用脚掌踢为“蹬”，用脚趾踢为“挑”，用脚后跟踢为“磕”等不算双脚同时离地的跳跃动作和其他复杂动作，踢毽子的基本动作共有8种，即盘、蹦、拐、磕、抹、背（音“杯”）、勾、踹。由于参与踢毽子的民众广及全国各地，而且踢毽子运动的流传又年代久远，所以对同样的动作形成了各地的多达几百种不同的称谓。\n毽子是一项良好的全身性运动，它不需要任何专门的场地和设备，运动量可大可小，老幼皆宜，尤其有助于培养人的灵敏性和协调性，有助于身体的全面发展，增强健康。",
+
+		"放风筝\n风筝又称纸鸢、风鸢、纸鹞、鹞子，是由古代劳动人民发明于中国东周春秋时期，至今已2000多年。南北朝时，风筝开始成为传递信息的工具；从隋唐开始，由于造纸业的发达，民间开始用纸来裱糊风筝；到了宋代，放风筝成为人们喜爱的户外活动。\n放风筝的时候，一般是一抽一放。抽的时候，因为风筝提线一般放在风筝面靠上的位置，加大牵引力可以控制风筝角度变小，上扬力增加，风筝稳步上升；放的时候，即平衡的风筝牵引力变小，在风力和扬力的合力作用下，风筝会飞高飞远，但是必须很快又抽，以再次保持风筝的角度稳定。风力正盛的时候可以多放线，当风力稍有下降，就收一些线。\n春天放风筝，对人的身体健康是非常有益处的。传统中医认为，放风筝者沐浴和煦的阳光和春风，有“疏泄内热，增强体质之益。此外，放风筝能使人情绪开朗、心境愉悦。放飞时，大脑高度集中，无疑会消除人的内心杂念；放飞者极目蓝天，其心胸也会感到开阔；此外，春季草长莺飞，触目皆景，放飞风筝，是一次人与自然的美好对话。",
+
+		"捡石子\n这个游戏有不同的规则，较普遍简单的是3颗石子（或用布做的小沙包）在桌面上丢开；拿起其中一颗石子向上抛；趁向上抛的石子未落桌面前，抓起桌面上第二颗石子，再来接住刚才向上抛的石子。依次类推，抓起第三颗石子。如果三颗石子同时接住，再同时往上抛，此时手掌迅速翻过来，使三颗石子落于手背上；然后再往上抛，若能接住三颗石子，即游戏成功。如果抛起的石子没接住，或者桌面上的石子没抓起，就结束游戏，该对方开始。"
+		]
+		
+
+		var i=0;//第一个位置的项数
+		var n=7;//图片数
+
+		$(document).ready(function(){
+			var nextGifValue=6;//.nextGif在数组中的初始位置
+			//鼠标点击上箭头
+			$('#topmove').click(function(){
+				if(i<=n-4){
+					$('.imgBox .img').eq(i).css('display','none');
+					i++;
+				}
+			});
+			//鼠标点击下箭头
+			$('#bottommove').click(function(){
+				if(i>=n-4){
+					$('.imgBox .img').eq(i-1).css('display','block')
+					i--;
+				}
+			});
+			//鼠标点击左边图片
+			$(".clickImg").click(function(){
+                 $(".gif").attr('src',imgGif[$(this).attr("value")-1]);
+                 $(".nextGif").attr('src',$(this).parent().parent().next().find('img').attr("src"));
+                 if($(this).attr("value")!=n){nextGifValue=$(this).attr("value");}
+                 	else{nextGifValue=nextGifValue;}
+                 $(".text").text(imgText[$(this).attr("value")-1]);
+
+       		});
+       		//鼠标点击右边图片
+			$(".nextGif").click(function(){
+                 $(".gif").attr('src',imgGif[nextGifValue]);
+                 $(".text").text(imgText[nextGifValue]);
+       		});
+
+       		$(".rightArrow").click(function(){
+                 $(".gif").attr('src',imgGif[nextGifValue]);
+                 $(".text").text(imgText[nextGifValue]);
+       		});
+
+		});
 	</script>
 </body>
 </html>

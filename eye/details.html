@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>毕业设计</title>
+	<link rel="stylesheet" href="../css/basic.css">
+	<link rel="stylesheet" href="../css/details.css">
+	<script src="../js/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+	<div id="nav">
+		<div class="logo">LOGO</div>
+		<div class="content">
+			<h2><a href="../index.html">目录</a></h2>
+			<ul>
+				<li><a href="eye.html">眼睛</a></li>
+				<li><a href="../mouse/mouse.html">嘴巴</a></li>
+				<li><a href="../hand/hand.html">手脚</a></li>
+				<li><a href="../brain/brain.html">大脑</a></li>
+				<li><a href="../ear/ear.html">耳朵</a></li>
+			</ul>
+			<input type="text" class="search">
+			<button class="searchButton"></button>
+		</div>
+	</div>
+	<div id="main">
+		<div id="curtain"></div>
+		<div id="showContent">
+			<div id="left">
+				<div class="leftContent">
+					<a class="topArrow" id="topmove" href="###"></a>
+					<ul class="imgBox">
+						<li><a class="img" href="###"><img class="clickImg" value="1" src="../img/弹弓.jpg" alt=""></a></li>
+						<li><a class="img" href="###"><img class="clickImg" value="2" src="../img/投掷.jpg" alt=""></a></li>
+						<li><a class="img" href="###"><img class="clickImg" value="3" src="../img/丢飞碟.jpg" alt=""></a></li>
+						<li><a class="img" href="###"><img class="clickImg" value="4" src="../img/跳马背.jpg" alt=""></a></li>
+						<li><a class="img" href="###"><img class="clickImg" value="5" src="../img/定飞镖.jpg" alt=""></a></li>
+						<li><a class="img" href="###"><img class="clickImg" value="6" src="../img/套圈.jpg" alt=""></a></li>
+					</ul>
+					<a class="bottomArrow" id="bottommove" href="###"></a>
+				</div>
+
+			</div>
+			<div id="right">
+				<div class="rightContent">
+					<div class="left">
+						<img class="gif" value="5" src="../gif/定飞镖.gif"></img>
+						<textarea name="comment" id="comment" class="comment" cols="30" rows="10" placeholder="请输入你的评论"></textarea>
+					</div>
+					<div class="rightArrow"></div>
+					<div class="right">
+						<textarea class="text" readonly disabled>定飞镖
+旧时传统儿童游戏，在二十世纪六七十年代盛行于全中国。
+玩家手捏顶头是"U"字形的铁棍或铁丝，推一个直径50厘米左右的黑铁环向前跑。有的还在铁环上套两三个小环，滚动时更响亮。用铁丝做一个圈，然后再做一个长柄的铁钩子，推着这个铁丝圈滚着走。
+孩子们右手持着长柄，将其搭上铁环，手上的力量通过长柄的钩子传递到铁环上，促使铁环快速地滚动。孩子跟在铁环后头快速奔跑起来，只有这样，他才能跟上铁环。孩子加大手上的力量，那个钩子起到了轴承般的作用，从而推动着铁环。由于铁环的惯性，孩子手上的长柄也随着铁环的滚动而做着圆周运动， 滚铁环的关键之处在于掌握好平衡。
+滚铁环自娱性强，荷兰的运动专家在1976年指出滚铁环比赛有助于提高人体的平衡性、肢体的协调以及眼力，可以提高四肢活动能力，最重要的是它让孩子们享受运动的乐趣，有一个无忧的童年。廉价而又方便实用的铁环，不限场地，随处可玩，运动量大而又灵活多变，能让孩子在游戏中运动，在运动中成长，给他强健的体魄，灵巧的身躯，顽强的意志和过人的精力。
+</textarea>
+						<img class="nextGif" value="6" src="../img/套圈.jpg"></img>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+			$(document).ready(function(){
+				// 导航栏
+				$("#nav").hover(
+					function(){
+						$("#nav").animate({width:'220px',height:'250px',left:'12.5%'});
+						$("#nav .content" ).fadeIn("1000");
+						$("#nav .logo").animate({width:'220px',height:'60px',left:'0'});
+						$("#nav").css('border-radius','18px');
+					},
+  					function(){
+  						$("#nav").animate({width:'30px',height:'30px',left:'16%'});
+  						$("#nav").css('border-radius','0 0 5px 5px');
+  						$("#nav .logo").animate({width:'110px',height:'30px',left:'-40px'});
+  						$(".content" ).fadeOut("1000");
+  					});
+  		});
+	</script>
+	<script>
+		var imgGif=[//图片对应的gif
+				"../gif/弹弓.gif",
+				"../gif/投掷.gif",
+				"../gif/丢飞碟.gif",
+				"../gif/跳马背.gif",
+				"../gif/定飞镖.gif",
+				"../gif/套圈.gif"
+					];
+		var imgText=[//图片对应的文本
+				"弹弓\n起源于古代中国，主要用竹、塑料、橡胶、木头 金属 皮筋等材质制作，弹弓是一种冷兵器或者是游戏工具。弹弓一般用树木的枝桠制作，呈“丫”字形，上两头系上皮筋，皮筋中段系上一包裹弹丸的皮块。威力视乎皮筋的拉力，皮筋拉力越大，弹弓的威力也越大。",
+				"投掷\n投壶在战国时得到相当发展，当时的文者倾向于内心修养，投壶这种从容安详、讲究礼节的活动，正适合他们的需要。此外，由于社会发展，汉族民间以投壶为乐的现象越来越普及。投壶几经演变，流传了两千多年，一度极为兴盛，在士大夫中玩得热火朝天。之所以如此，首先因为它是一项“古礼”，士大夫们认为是一种雅致的娱乐，符合他们的生活方式，乐于接受。其次，这种娱乐本身可以修身养性，并有健身的意义。投壶虽然从最初的礼仪演变成娱乐游戏，但它始终伴随着一整套繁琐的礼节，没有完全割断同“礼仪”的联系。这样，就使投壶的流传范围变得狭窄，只限于士大夫阶层。到了清末，随着西方现代体育的传入，投壶退出了历史舞台。物资缺乏的年代，孩童们将石子或树枝取代了箭，竹篓或藤筐取代了酒壶，就以能扔进为标准，大多不知道古人是如何玩的。",
+				"丢飞碟\n飞盘1946年发明於美国， 1970年代风行欧美， 日本是亚洲最早推展的国家， 我国要属台湾地区最早接触。飞盘作为一种群众健身活动深受广大锻炼者的喜爱。每到夏秋之季晚餐过后在草坪上，男女老少将飞盘抛向衬托着落日余辉的天空。 当飞盘优美地飞行一段距离后，再由对面的同伴接住后再悠悠荡荡地抛回来。物资缺乏的年代小孩子们常常用一块硬纸板代替飞盘。",
+				"跳马背\n一个人当“山羊”，其他人助跑一段后，撑住“山羊”的背或双肩，双腿分开从“山羊”头上越过。“山羊”会越长越高，先是手撑脚背或小腿，然后手撑膝盖，再站直。运动性：跑、跳、、爆发力、臂力以及落地时的平衡，都能得到很好的锻炼。 可操作性：有块空地就能玩，人数不限。",
+				"定飞镖\n飞镖是具有悠久历史的英国酒吧游戏。20世纪70年代以后，飞镖成为世界上最受欢迎的运动之一。长久以来这项运动的起源被认为是标枪、驽箭或箭术，而其中最可能是飞镖运动来源的是射箭。事实上，回想最早的飞镖靶，你会发现这些有着同心圆的靶子就是射箭靶的模型。更确切的说，飞镖最可能被当作“箭”来认识。\n把飞镖放在掌沿上，找出它的平衡点(即重心)。现在用拇指把飞镖滚到四指尖端，再把拇指放到重心后面一点点，最后用其余手指抓住它，至于用几个手指就随你自己方便。现在可以举起手臂来掷镖了。",
+				"套圈\n手拿朔料套圈站在横线上，双脚不能超出横线，对准前面距离1—3米的目标物体投扔，朔料套圈套住投准柱为好。投扔的力度要适中，眼睛看着目标物体。"
+				];
+
+		var nextGifValue=5;//.nextGif图片在数组中的初始位置
+
+		var i=0;//第一个位置的项数
+		var n=6;//图片数
+
+		$(document).ready(function(){
+
+			//鼠标点击上箭头
+			$('#topmove').click(function(){
+				if(i<=n-4){
+					$('.imgBox .img').eq(i).css('display','none');
+					i++;
+				}
+			});
+
+			//鼠标点击下箭头
+			$('#bottommove').click(function(){
+				if(i>=n-4){
+					$('.imgBox .img').eq(i-1).css('display','block')
+					i--;
+				}
+			});
+
+
+			//鼠标点击左边图片
+			$(".clickImg").click(function(){
+                 $(".gif").attr('src',imgGif[$(this).attr("value")-1]);
+                 $(".nextGif").attr('src',$(this).parent().parent().next().find('img').attr("src"));
+                 if($(this).attr("value")!=n){nextGifValue=$(this).attr("value");}
+                 	else{nextGifValue=nextGifValue;}
+                 $(".text").text(imgText[$(this).attr("value")-1]);
+
+       		});
+
+       		//鼠标点击右边图片
+			$(".nextGif").click(function(){
+                 $(".gif").attr('src',imgGif[nextGifValue]);
+                 $(".text").text(imgText[nextGifValue]);
+       		});
+
+       		$(".rightArrow").click(function(){
+                 $(".gif").attr('src',imgGif[nextGifValue]);
+                 $(".text").text(imgText[nextGifValue]);
+       		});
+
+		});
+	</script>
+</body>
+</html>

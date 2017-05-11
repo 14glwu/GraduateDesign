@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>毕业设计</title>
+	<link rel="stylesheet" href="../css/basic.css">
+	<link rel="stylesheet" href="../css/details.css">
+	<script src="../js/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+	<div id="nav">
+		<div class="logo">LOGO</div>
+		<div class="content">
+			<h2><a href="../index.html">目录</a></h2>
+			<ul>
+				<li><a href="../eye/eye.html">眼睛</a></li>
+				<li><a href="../mouse/mouse.html">嘴巴</a></li>
+				<li><a href="../hand/hand.html">手脚</a></li>
+				<li><a href="../brain/brain.html">大脑</a></li>
+				<li><a href="ear.html">耳朵</a></li>
+			</ul>
+			<input type="text" class="search">
+			<button class="searchButton"></button>
+		</div>
+	</div>
+	<div id="main">
+		<div id="curtain"></div>
+		<div id="showContent">
+			<div id="left">
+				<div class="leftContent">
+					<a class="topArrow" id="topmove" href="###"></a>
+					<ul class="imgBox">
+						<li><a class="img" href="###"><img class="clickImg" value="1" src="../img/123木头人.jpg" alt=""></a></li>
+						<li><a class="img" href="###"><img class="clickImg" value="2" src="../img/捉迷藏.jpg" alt=""></a></li>
+						<li><a class="img" href="###"><img class="clickImg" value="3" src="../img/扔沙包.jpg" alt=""></a></li>
+						<li><a class="img" href="###"><img class="clickImg" value="4" src="../img/捉蛐蛐.jpg" alt=""></a></li>
+						<li><a class="img" href="###"><img class="clickImg" value="5" src="../img/剪刀石头布.jpg" alt=""></a></li>
+					</ul>
+					<a class="bottomArrow" id="bottommove" href="###"></a>
+				</div>
+
+			</div>
+			<div id="right">
+				<div class="rightContent">
+					<div class="left">
+						<img class="gif" value="4" src="../gif/捉蛐蛐.gif"></img>
+						<textarea name="comment" id="comment" class="comment" cols="30" rows="10" placeholder="请输入你的评论"></textarea>
+					</div>
+					<div class="rightArrow"></div>
+					<div class="right">
+						<textarea class="text" readonly disabled>捉蛐蛐儿
+找到一片草丛尽量蹲下身，一般距离5米左右听声，等听仔细后轻轻靠近，切勿莽撞冲过去，蛐蛐儿一听声响便会弃洞趴走，到那时，任凭你掘地三尺都没用了。然后轻轻靠近后，抓住植物左右摇动，幅度别太大，蛐蛐儿受惊后便会爬出了，幅度一大蛐蛐儿就跳了。
+</textarea>
+						<img class="nextGif" value="5" src="../img/剪刀石头布.jpg"></img>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+			$(document).ready(function(){
+				// 导航栏
+				$("#nav").hover(
+					function(){
+						$("#nav").animate({width:'220px',height:'250px',left:'12.5%'});
+						$("#nav .content" ).fadeIn("1000");
+						$("#nav .logo").animate({width:'220px',height:'60px',left:'0'});
+						$("#nav").css('border-radius','18px');
+					},
+  					function(){
+  						$("#nav").animate({width:'30px',height:'30px',left:'16%'});
+  						$("#nav").css('border-radius','0 0 5px 5px');
+  						$("#nav .logo").animate({width:'110px',height:'30px',left:'-40px'});
+  						$(".content" ).fadeOut("1000");
+  					});
+  		});
+	</script>
+<script>
+		var imgGif=[//图片对应的gif
+				"../gif/123木头人.gif",
+				"../gif/捉迷藏.gif",
+				"../gif/扔沙包.gif",
+				"../gif/捉蛐蛐.gif",
+				"../gif/剪刀石头布.gif"
+					]
+		var imgText=[//图片对应的文本
+				"123木头人\n木头人这种游戏考究令行静止的能力。\n这种“木头人”的游戏，就是几个小孩子围在一起，嘴里念念有词：“三三四四，我们都是木头人，不许说话不许动”，然后摆个姿势就不动了，谁能坚持住到最后谁就是胜者。首先划定一个起点，一个终点。一个人蒙眼，叫123，这时候其他人可以行动，要尽快到达终点，到达终点的人可以自由活动。不然，当蒙眼的人叫木头人，转过身的时候，他要看到其他人不能动，直至他再次回头蒙眼。动了，这个人就出局。\n这个游戏可以使游戏者学会令行禁止，萌发规则意识。加强心理活动体验，增进孩子们之间的情感。懂得如何控制自己的情绪，或是挑动别人的情绪，增强人际关系，拉进心理距离。",
+
+				"捉迷藏\n一种游戏，亦称摸瞎子，即蒙住眼睛寻找躲藏者的游戏。最早只是一种儿童游戏。两千年前即流行于希腊，蒙住一人双眼，把他转得不辨方向，然后大家向他这个“瞎子”呼喊取乐，蒙眼者追捕，众人躲闪，这种游戏在中世纪成为成人游戏。\n先选定一个范围，大家经过猜拳或一定规则之后，选定一个人先蒙上眼睛或背着大家数数，可长可短，而其他人必须在这段时间找到一个地方躲藏，时间到后那个人去找其他人，最先找到的人为下一轮找的人。没有被找到，且最后回到出发点没有被寻找者发现的人，将不参与第二局的猜拳，直接成为躲藏者。游戏可反复进行。",
+
+				"扔沙包\n一种中国传统民间儿童游戏。个正方体布包，有六个面，为立体状。内装玉米粒，高粱粒，麦粒，豆粒或细沙粒，一般为自制，边长约5cm至10cm之间。\n以四人为例，分两组，每组两个，两边各一个人（同一组），中间两个人（同一组），两边的人相距十米至十五米用力投沙包，目的是击中中间的人，中间的人要躲避投来的沙包或者将其接住。如果中间的人能躲过沙包，则两边的人捡起沙包后继续投掷。如果中间的人未能躲过沙包，则被击中淘汰出局，若两人都被打中淘汰出局，则站在两边的人赢此局。如果中间的人将沙包接住，未使沙包掉落到地上，则本组淘汰出局者可恢复，再胜则两边的人输此局，中间的人与站在两边的人对换场地，继续投掷。",
+
+				"捉蛐蛐儿\n找到一片草丛尽量蹲下身，一般距离5米左右听声，等听仔细后轻轻靠近，切勿莽撞冲过去，蛐蛐儿一听声响便会弃洞趴走，到那时，任凭你掘地三尺都没用了。然后轻轻靠近后，抓住植物左右摇动，幅度别太大，蛐蛐儿受惊后便会爬出了，幅度一大蛐蛐儿就跳了。",
+
+				"剪刀石头布\n“石头、剪刀、布”是猜拳的一种，又称“猜丁壳”，起源于中国，然后传到日本、韩国等地，随着亚欧贸易的不断发展传到了欧洲，到了近现代逐渐发展到世界。游戏规则中，石头克剪刀，剪刀克布，布克石头。"
+				];
+		var nextGifValue=4;//.nextGif图片的初始value
+
+		var i=0;//第一个位置的项数
+		var n=5;//图片数
+
+		$(document).ready(function(){
+
+			//鼠标点击上箭头
+			$('#topmove').click(function(){
+				if(i<=n-4){
+					$('.imgBox .img').eq(i).css('display','none');
+					i++;
+				}
+			});
+
+			//鼠标点击下箭头
+			$('#bottommove').click(function(){
+				if(i>=n-4){
+					$('.imgBox .img').eq(i-1).css('display','block')
+					i--;
+				}
+			});
+
+			//鼠标点击左边图片
+			$(".clickImg").click(function(){
+                 $(".gif").attr('src',imgGif[$(this).attr("value")-1]);
+                 $(".nextGif").attr('src',$(this).parent().parent().next().find('img').attr("src"));
+                 if($(this).attr("value")!=n){nextGifValue=$(this).attr("value");}
+                 	else{nextGifValue=nextGifValue;}
+                 $(".text").text(imgText[$(this).attr("value")-1]);
+
+       		});
+       		//鼠标点击右边图片
+			$(".nextGif").click(function(){
+                 $(".gif").attr('src',imgGif[nextGifValue]);
+                 $(".text").text(imgText[nextGifValue]);
+       		});
+
+       		$(".rightArrow").click(function(){
+                 $(".gif").attr('src',imgGif[nextGifValue]);
+                 $(".text").text(imgText[nextGifValue]);
+       		});
+
+		});
+
+	</script>
+</body>
+</html>

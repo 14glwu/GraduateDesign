@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>毕业设计</title>
+	<link rel="stylesheet" href="../css/basic.css">
+	<link rel="stylesheet" href="../css/details.css">
+	<script src="../js/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+	<div id="nav">
+		<div class="logo">LOGO</div>
+		<div class="content">
+			<h2><a href="../index.html">目录</a></h2>
+			<ul>
+				<li><a href="../eye/eye.html">眼睛</a></li>
+				<li><a href="mouse.html">嘴巴</a></li>
+				<li><a href="../hand/hand.html">手脚</a></li>
+				<li><a href="../brain/brain.html">大脑</a></li>
+				<li><a href="../ear/ear.html">耳朵</a></li>
+			</ul>
+			<input type="text" class="search">
+			<button class="searchButton"></button>
+		</div>
+	</div>
+	<div id="main">
+		<div id="curtain"></div>
+		<div id="showContent">
+			<div id="left">
+				<div class="leftContent">
+					<a class="topArrow" id="topmove" href="###"></a>
+					<ul class="imgBox">
+						<li><a class="img" href="###"><img class="clickImg" value="1" src="../img/跳皮筋.jpg" alt=""></a></li>
+						<li><a class="img" href="###"><img class="clickImg" value="2" src="../img/拍洋画.jpg" alt=""></a></li>
+						<li><a class="img" href="###"><img class="clickImg" value="3" src="../img/吹泡泡.jpg" alt=""></a></li>
+						<li><a class="img" href="###"><img class="clickImg" value="4" src="../img/吹鸟笛.jpg" alt=""></a></li>
+						<li><a class="img" href="###"><img class="clickImg" value="5" src="../img/传话筒.jpg" alt=""></a></li>
+					</ul>
+					<a class="bottomArrow" id="bottommove" href="###"></a>
+				</div>
+
+			</div>
+			<div id="right">
+				<div class="rightContent">
+					<div class="left">
+						<img class="gif" value="4" src="../gif/吹鸟笛.gif"></img>
+						<textarea name="comment" id="comment" class="comment" cols="30" rows="10" placeholder="请输入你的评论"></textarea>
+					</div>
+					<div class="rightArrow"></div>
+					<div class="right">
+						<textarea class="text" readonly disabled>吹鸟笛
+夹塘地区1906年前就有逃荒农民集居，但土地盐碱重，产量极低。为维持生计，有的农民半农半渔，有的开始利用滩涂、野生资源，逐渐形成以捕鸟为生计的群体，并在实践中创造了许多诱捕鸟类的手艺。其中，摹鸟笛技应运而生，且世代相传、子承父技。至解放前后，境内专业捕鸟者达30余户、70余人，摹鸟笛技已广为应用。
+人们都赞叹鸟儿委婉动听的鸣叫声，都想模仿它。鸟笛就是模仿鸟叫的工具。很多人小时候没有玩具玩，就自己动手做玩具玩，鸟笛是其中之一，这种鸟笛能逼真地模仿鸟叫，它的发生原理同笛子差不多，但结构却比笛子要简单的多。
+使用方式是：把鸟笛放到清水里浸湿，用嘴吹响哨子，同时用手不断调节推拉杆。美妙动听的鸟鸣声音就会从鸟笛里飞扬出来。推拉杆往上推，空气柱短，音调就高;推拉杆往下拉，空气柱长，音调就低。
+
+</textarea>
+						<img class="nextGif" value="5" src="../img/传话筒.jpg"></img>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+			$(document).ready(function(){
+				// 导航栏
+				$("#nav").hover(
+					function(){
+						$("#nav").animate({width:'220px',height:'250px',left:'12.5%'});
+						$("#nav .content" ).fadeIn("1000");
+						$("#nav .logo").animate({width:'220px',height:'60px',left:'0'});
+						$("#nav").css('border-radius','18px');
+					},
+  					function(){
+  						$("#nav").animate({width:'30px',height:'30px',left:'16%'});
+  						$("#nav").css('border-radius','0 0 5px 5px');
+  						$("#nav .logo").animate({width:'110px',height:'30px',left:'-40px'});
+  						$(".content" ).fadeOut("1000");
+  					});
+  		});
+	</script>
+	<script>
+		var imgGif=[//图片对应的gif
+				"../gif/跳皮筋.gif",
+				"../gif/拍洋画.gif",
+				"../gif/吹泡泡.gif",
+				"../gif/吹鸟笛.gif",
+				"../gif/传话筒.gif"
+					]
+		var imgText=[//图片对应的文本
+				"跳皮筋\n跳皮筋，也叫跳橡皮筋、跳橡皮绳、跳猴皮筋，是一种适宜于儿童的民间游戏，约流行在20世纪50至80年代。\n皮筋是用橡胶制成的有弹性的细绳，长3米左右，皮筋被牵直固定之后，即可来回踏跳。可三人至五人一起玩，亦可分两组比赛，边跳边唱非常有趣。先由俩人各拿一端把皮筋抻长，其他人轮流跳，按规定动作，完成者为胜，中途跳错或没钩好皮筋时，就换另一人跳。皮筋高度从脚踝处开始到膝盖，到腰到胸到肩头，再到耳朵头顶，然后举高“小举”、“大举”，难度越来越大，跳者用脚不许用手钩皮筋边舞边唱着自编的有一定节奏的歌谣。跳皮筋有挑、勾、踩、跨、摆、碰、绕、掏、压、踢等10余种腿部基本动作，同时还可组合跳出若干个花样来。\n跳橡皮筋是在两脚交替跑跳中完成各种动作的全身运动。跳橡皮筋是少年儿童十分喜爱的一项体育活动，由于它具有经济、简便、趣味性强等特点，故易于在广大学生中普及。跳皮筋可增强下肢肌肉力量，提高弹跳力，对发展灵活性、柔韧性、协调性也有着积极的促进作用。每天连续跳7-8min，还能发展耐久力，促进心肺功能的提高",
+
+				"拍洋画\n洋画是一种质地坚硬的彩色小画片，题材多为《封神榜》、《西游记》等小说、动画片中的人物。洋画的尺幅相对比较固定，一幅整版洋画的尺寸十分近似，具体的尺寸约为25.5×18厘米。不仅如此，各地版式也十分相似，其中，以每一整版横排五张洋画，纵列五枚洋画，全版共25枚洋画的版式最为常见。每张洋画的尺寸约为4×3厘米。游戏时孩子们把洋画合在一起，摆在地上，轮流用巴掌去拍，或者用洋画去拍洋画，能拍翻即可拿走",
+
+				"吹泡泡\n一种流行于儿童中的游戏。吹泡泡溶液最佳配方：2份洗涤剂，6份水和1~4份的甘油。吹泡泡时将带有圆形或环形的的工具浸没在溶液中，拿起后孔会附有一层透明的膜，对着孔中的膜吹，那层膜便会形成一个个的泡泡。\n光线穿过肥皂泡的薄膜时，薄膜的顶部和底部都会产生折射，肥皂薄膜最多可以包含大约150个不同的层次。我们看到的凌乱的颜色组合是由不平衡的薄膜层引起的。最厚的薄膜层反射红光，最薄的反射紫光，居中的反射太阳光的七种颜色。",
+
+				"吹鸟笛\n夹塘地区1906年前就有逃荒农民集居，但土地盐碱重，产量极低。为维持生计，有的农民半农半渔，有的开始利用滩涂、野生资源，逐渐形成以捕鸟为生计的群体，并在实践中创造了许多诱捕鸟类的手艺。其中，摹鸟笛技应运而生，且世代相传、子承父技。至解放前后，境内专业捕鸟者达30余户、70余人，摹鸟笛技已广为应用。\n人们都赞叹鸟儿委婉动听的鸣叫声，都想模仿它。鸟笛就是模仿鸟叫的工具。很多人小时候没有玩具玩，就自己动手做玩具玩，鸟笛是其中之一，这种鸟笛能逼真地模仿鸟叫，它的发生原理同笛子差不多，但结构却比笛子要简单的多。\n使用方式是：把鸟笛放到清水里浸湿，用嘴吹响哨子，同时用手不断调节推拉杆。美妙动听的鸟鸣声音就会从鸟笛里飞扬出来。推拉杆往上推，空气柱短，音调就高;推拉杆往下拉，空气柱长，音调就低。",
+
+				"传话筒\n一种古老的具有实用性和娱乐性的工具，由中国人最先发明，是电话机最初的原型。个人各拿一个话筒，拉直绳子，就可以通话了，距离在一百米范围内皆可有效。一人在话筒开口说，另一人在话筒开口边用耳听。声音就可以通过棉线振动远距离传过来。如果想要传声筒传声越清晰，就要将传声筒中间的绳子绷得紧些。"
+				];
+		
+
+		var i=0;//第一个位置的项数
+		var n=5;//图片数
+
+		$(document).ready(function(){
+			var nextGifValue=4;//.nextGif在数组中的初始位置
+			//鼠标点击上箭头
+			$('#topmove').click(function(){
+				if(i<=n-4){
+					$('.imgBox .img').eq(i).css('display','none');
+					i++;
+				}
+			});
+			//鼠标点击下箭头
+			$('#bottommove').click(function(){
+				if(i>=n-4){
+					$('.imgBox .img').eq(i-1).css('display','block')
+					i--;
+				}
+			});
+			//鼠标点击左边图片
+			$(".clickImg").click(function(){
+                 $(".gif").attr('src',imgGif[$(this).attr("value")-1]);
+                 $(".nextGif").attr('src',$(this).parent().parent().next().find('img').attr("src"));
+                 if($(this).attr("value")!=n){nextGifValue=$(this).attr("value");}
+                 	else{nextGifValue=nextGifValue;}
+                 $(".text").text(imgText[$(this).attr("value")-1]);
+
+       		});
+       		//鼠标点击右边图片
+			$(".nextGif").click(function(){
+                 $(".gif").attr('src',imgGif[nextGifValue]);
+                 $(".text").text(imgText[nextGifValue]);
+       		});
+
+       		$(".rightArrow").click(function(){
+                 $(".gif").attr('src',imgGif[nextGifValue]);
+                 $(".text").text(imgText[nextGifValue]);
+       		});
+
+		});
+	</script>
+</body>
+</html>
