@@ -138,10 +138,13 @@
 	font-size: 14px;
 	resize: none;
 	color: #666;
-	line-height: 28px;
+	line-height: 24px;
 	border: 1px solid #999;
 	box-sizing: border-box;
 	text-indent: 40%;
+	padding: 0 8px 0 15px;
+	word-break: break-all;
+	text-align: justify;
 }
 #right .nextGif{
 	width: 100%;
